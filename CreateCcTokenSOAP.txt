@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.xmlsoap.org/soap/envelope/ http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soap:mustUnderstand="1">
+      <wsse:UsernameToken>
+        <wsse:Username>cchsfs</wsse:Username>
+        <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">rCTZz1wjRzNCk+Wt4mnOgBglFAekEU+b80+69ofYfHg87imf4V2XfHQ3vMWcTEXnxn739hhYYaa9HE9wcrGhzrLWB7DBAj6MtX4Ivs5NVPjXiOf73R2SldHr2ZaVZUV7cpvHDqVCCznSi6pOIRTmMKtWwtp4ramw8bvGB+D7Qs+v9UZOP1Vd/XRSDF3nuKAE4/NAOQOTDjMjS+vgLoZP9KJVJyp8+sohGamiroUO/zBYpC9U+oA5gfFBGPuO52GcmXjAnLoiUdTnJzH77MYpxYlYBSRzFP/AXluSwQ4cBLFc8WSF7Ufc3iJY59EyMdX/SJvEGPFKRBM/KmFt9RW3Jg==</wsse:Password>
+      </wsse:UsernameToken>
+    </wsse:Security>
+  </soap:Header>
+  <soap:Body>
+    <requestMessage xmlns="urn:schemas-cybersource-com:transaction-data-1.50" xmlns:xsj="http://www.w3.org/2001/XMLSchema-instance" xsj:schemaLocation="urn:schemas-cybersource-com:transaction-data-1.50 https://ics2ws.ic3.com/commerce/1.x/transactionProcessor/CyberSourceTransaction_1.50.xsd">
+      <merchantID>cchsfs</merchantID>
+      <merchantReferenceCode>4D8C3A1056742ADBE055000000000001</merchantReferenceCode>
+      <clientApplication>CCHSFS Oracle CyberSource Gateway</clientApplication>
+      <clientApplicationVersion>0.7</clientApplicationVersion>
+      <clientApplicationUser>ABACUS</clientApplicationUser>
+      <billTo>
+        <firstName>Jack</firstName>
+        <lastName>Frost</lastName>
+        <street1>63 Sweeden Street</street1>
+        <city>Caribou</city>
+        <state>ME</state>
+        <postalCode>04036</postalCode>
+        <country>US</country>
+        <email>empty@nothing.com</email>
+      </billTo>
+      <shipTo>
+        <firstName>Jack</firstName>
+        <lastName>Frost</lastName>
+        <street1>63 Sweeden Street</street1>
+        <city>Caribou</city>
+        <state>ME</state>
+        <postalCode>04036</postalCode>
+        <country>US</country>
+        <email>empty@nothing.com</email>
+      </shipTo>
+      <purchaseTotals>
+        <currency>USD</currency>
+      </purchaseTotals>
+      <card>
+        <fullName>Jack Frost</fullName>
+        <accountNumber>4111111111111111</accountNumber>
+        <expirationMonth>01</expirationMonth>
+        <expirationYear>2018</expirationYear>
+        <cardType>001</cardType>
+      </card>
+      <recurringSubscriptionInfo>
+        <frequency>on-demand</frequency>
+      </recurringSubscriptionInfo>
+      <paySubscriptionCreateService run="true"/>
+    </requestMessage>
+  </soap:Body>
+</soap:Envelope>
